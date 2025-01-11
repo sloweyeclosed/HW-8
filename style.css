@@ -1,0 +1,50 @@
+.text-box h3:first-child {
+    color: pink;
+}
+
+#greycol {
+    color: grey;
+}
+
+.text-box>div>p {
+    color: red;
+}
+
+.text-box>div+h3+p {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+
+
+
+a:hover{
+    color: violet;
+}
+a:active {
+    color: darkgoldenrod;
+}
+a:link {
+    color: rgb(255, 0, 0);
+}
+
+
+
+ul li:nth-child(odd){
+    color: red;
+}
+ul li:nth-child(even){
+    color: brown;
+}
+ul li:first-child {
+    color: blue;
+}
+ul li:last-child {
+    color: blue;
+}
+ul li:nth-child(33) {
+    color: blue;
+}
