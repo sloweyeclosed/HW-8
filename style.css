@@ -1,3 +1,10 @@
+body {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
 .text-box h3:first-child {
     color: pink;
 }
@@ -21,30 +28,59 @@
 
 
 
-a:hover{
-    color: violet;
+.week-list {
+    list-style-type: none;
+
 }
-a:active {
-    color: darkgoldenrod;
+
+.week-item:not(:last-child) {
+    
+    margin-bottom: 32px;
+    
 }
-a:link {
-    color: rgb(255, 0, 0);
+.week-link {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: all 0.15s ease;
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+.week-link:hover {
+    border-color: transparent;
 }
 
 
 
-ul li:nth-child(odd){
-    color: red;
-}
-ul li:nth-child(even){
-    color: brown;
-}
-ul li:first-child {
+.week-item:nth-child(odd) .week-link:hover {
     color: blue;
 }
-ul li:last-child {
-    color: blue;
+.week-item:nth-child(odd) .week-link:active {
+    background-color: black;
+    opacity: 0.5;
 }
-ul li:nth-child(33) {
-    color: blue;
+.week-item:nth-child(odd) .week-link:focus {
+    border-color: yellow;
+}
+
+.week-item:nth-child(even) .week-link:hover {
+    color: yellow;
+}
+
+.week-item:nth-child(even) .week-link:active {
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+
+.week-item:nth-child(even) .week-link:focus {
+    border-color: blue;
+}
+.week-item:last-child .week-link:hover {
+    background-color: red;
+    color: black;
 }
